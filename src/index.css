@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Smooth transitions for all interactive elements */
+button, a {
+  @apply transition-all duration-200 ease-in-out;
+}
+
+/* Custom shadow for header */
+header {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
